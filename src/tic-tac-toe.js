@@ -144,12 +144,6 @@ class Game extends React.Component {
   }
 }
 
-function TicTacToe() {
-  return (
-    <Game />
-  )
-}
-
 function calculateWinner(squares) {
   const list = [
     [0, 1, 2],
@@ -173,6 +167,10 @@ function calculateWinner(squares) {
   }
 
   return null
+}
+
+function TicTacToe() {
+  return (<Game />)
 }
 
 export default TicTacToe;
