@@ -1,50 +1,33 @@
-body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+html, body { margin: 0; height: 100%; color: #323234; background-color: #fdf9f9;}
+
+* { box-sizing: border-box;  }
+
+#root { height: 100%; }
+
+.tc { text-align: center; }
+.hideBigView { display: none; }
+.UserMain { display: flex; min-height: 100%; }
+.UserMain .logo {border-radius: 50%; text-align: center; background-color: #f7e8d5; border: 1px solid #778668; color: #778668;}
+.UserMain .leftSide { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 700px; min-width: 700px; background: linear-gradient(0,#a7ac88,#778668); padding: 100px 50px; }
+.UserMain .leftSide .logo { width: 100px; height: 100px; font-size: 28px; line-height: 95px; margin: 0px auto 0; }
+.UserMain .leftSide h1 { font-size: 24px; margin-top: 20px; color: #fbf4ed;}
+.UserMain .leftSide .beautifulWords { margin-top: 40px; text-align: center; font-size: 16px; color: #fbf4ed;}
+.UserMain .leftSide .bannerImg { text-align: center; margin-top: 40px; }
+.UserMain .leftSide .bannerImg img { width: 300px; }
+.UserMain .leftSide .copyright { font-size: 14px; color: #f5f5f5; text-align: center; margin-top: 20px; }
+
+.UserMain section { flex: 1; }
+
+.UserMain .header { display: none; height: 80px; padding: 10px 5%; background: linear-gradient(270deg,#a7ac88,#778668); color: #fbf4ed;}
+.UserMain .header .logo { width: 60px; height:60px; font-size: 20px; line-height: 55px; }
+.UserMain .header .websiteName {  height: 60px; line-height: 60px; font-size: 22px; margin: 0; margin-left: 20px; }
+
+@media (max-width: 1300px) {
+  .hideBigView { display: block; }
+  .UserMain .leftSide { width: 50%; min-width: 50%;  }
 }
 
-ol, ul {
-  padding-left: 30px;
-}
-
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
+@media(max-width: 991px) {
+  .UserMain .leftSide { display: none; }
+  .UserMain .header { display: flex; }
 }

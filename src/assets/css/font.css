@@ -1,0 +1,89 @@
+@font-face {
+  font-family: MedievalSharp;
+  src: local('â˜º'), url(../font-face/MedievalSharp.ttf);
+}
+
+@font-face {
+  font-family: OSCBold;
+  src: local('â˜º'), url(../font-face/OpenSansCondensed-Bold.ttf);
+}
+
+@font-face {
+  font-family: OSCLight;
+  src: local('â˜º'), url(../font-face/OpenSansCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: OSCLightItalic;
+  src: local('â˜º'), url(../font-face/OpenSansCondensed-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: OswaldRegular;
+  src: local('â˜º'), url(../font-face/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: OswaldBold;
+  src: local('â˜º'), url(../font-face/Oswald-Bold.ttf);
+}
+
+@font-face {
+  font-family: OswaldLight;
+  src: local('â˜º'), url(../font-face/Oswald-Light.ttf);
+}
+
+@font-face {
+  font-family: Sunflower;
+  src: local('â˜º'), url(../font-face/Sunflower-Medium.ttf);
+}
+
+@font-face {
+  font-family: SunflowerBold;
+  src: local('â˜º'), url(../font-face/Sunflower-Bold.ttf);
+}
+
+@font-face {
+  font-family: SunflowerLight;
+  src: local('â˜º'), url(../font-face/Sunflower-Light.ttf);
+}
+
+.fontMedievalSharp {
+  font-family: MedievalSharp;
+}
+
+.fontOSCBold {
+  font-family: OSCBold;
+}
+
+.fontOSCLight {
+  font-family: OSCLight;
+}
+
+.fontOSCLightItalic {
+  font-family: OSCLightItalic;
+}
+
+.fontOswaldRegular {
+  font-family: OswaldRegular;
+}
+
+.fontOswaldBold {
+  font-family: OswaldBold;
+}
+
+.fontOswaldLight {
+  font-family: OswaldLight;
+}
+
+.fontSunflower {
+  font-family: Sunflower;
+}
+
+.fontSunflowerBold {
+  font-family: SunflowerBold;
+}
+
+.fontSunflowerLight {
+  font-family: SunflowerLight;
+}
