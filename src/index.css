@@ -2,12 +2,14 @@ html, body { margin: 0; height: 100%; color: #323234; background-color: #fdf9f9;
 
 * { box-sizing: border-box;  }
 
+a { text-decoration: none; }
+
 #root { height: 100%; }
 
 .tc { text-align: center; }
 .hideBigView { display: none; }
 .UserMain { display: flex; min-height: 100%; }
-.UserMain .logo {border-radius: 50%; text-align: center; background-color: #f7e8d5; border: 1px solid #778668; color: #778668;}
+.UserMain .logo { border-radius: 50%; text-align: center; background-color: #f7e8d5; border: 1px solid #778668; color: #778668; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
 .UserMain .leftSide { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 700px; min-width: 700px; background: linear-gradient(0,#a7ac88,#778668); padding: 100px 50px; }
 .UserMain .leftSide .logo { width: 100px; height: 100px; font-size: 28px; line-height: 95px; margin: 0px auto 0; }
 .UserMain .leftSide h1 { font-size: 24px; margin-top: 20px; color: #fbf4ed;}
@@ -21,13 +23,32 @@ html, body { margin: 0; height: 100%; color: #323234; background-color: #fdf9f9;
 .UserMain .header { display: none; height: 80px; padding: 10px 5%; background: linear-gradient(270deg,#a7ac88,#778668); color: #fbf4ed;}
 .UserMain .header .logo { width: 60px; height:60px; font-size: 20px; line-height: 55px; }
 .UserMain .header .websiteName {  height: 60px; line-height: 60px; font-size: 22px; margin: 0; margin-left: 20px; }
+.UserMain .header .websiteName a { color: #fbf4ed; }
+.UserMain .header .websiteName a:active, .UserMain .header .websiteName a:focus { color: #fbf4ed; }
+.UserMain.ReactMain .header { display: flex; }
+
+
+.contentView { padding: 0 40px; }
+.overviewList { padding: 200px 0 0; list-style: none; margin: 0px auto; min-width: 400px; max-width: 800px;}
+.overviewList > li { list-style: none; margin-bottom: 20px; }
+.overviewList > li > a, .overviewList > li .navItem { display: block; text-decoration: none; color: #323234; font-family: OswaldRegular; font-size: 20px; height: 40px; line-height: 40px; padding-left: 20px;background: #fbf4ed; border-left: 5px solid #778668; cursor: pointer;}
+.overviewList > li > a:hover, .overviewList > li .navItem:hover { color: #778668; }
+.overviewList > li .latestList { height: 0; overflow: hidden; list-style: none; padding: 0; background: #fbf7f2; transition: all ease-in-out .5s; -webkit-transition: all ease-in-out .5s; -moz-transition: all ease-in-out .5s; -ms-transition: all ease-in-out .5s; -o-transition: all ease-in-out .5s; }
+.overviewList > li .latestList li { position: relative; height: 40px; line-height: 40px; padding-left: 40px; font-size: 18px; font-family: Sunflower; cursor: pointer; }
+.overviewList > li .latestList li::before { content: ""; position: absolute; left: 25px; top: 11px; width: 0; height: 0; border: 8px solid transparent; border-left-color: #778668; }
+.overviewList > li .latestList li > a { display: block; color: #323234; text-decoration: none; }
+.overviewList > li .latestList li > a:hover { color: #778668; }
+
+.UserMain.ReactMain .contentView { padding: 80px 5%; }
 
 @media (max-width: 1300px) {
   .hideBigView { display: block; }
-  .UserMain .leftSide { width: 50%; min-width: 50%;  }
+  .UserMain .leftSide { width: 50%; min-width: 50%; }
+  
 }
 
 @media(max-width: 991px) {
   .UserMain .leftSide { display: none; }
   .UserMain .header { display: flex; }
+  .overviewList { padding-top: 80px; }
 }

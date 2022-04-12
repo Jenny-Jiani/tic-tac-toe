@@ -1,9 +1,10 @@
 import React from "react";
+import "../../assets/css/react/tic-tac-toe.scss"
 
 function Square(props) {
   return (
     <button
-      className="square"
+      className="square fontMedievalSharp"
       onClick={props.onClick}
       style={{color: props.needHighlight ? '#fea543' : '#323234'}}
     >
@@ -108,7 +109,7 @@ class Game extends React.Component {
         'Go to game start';
       return (
         <li key={step.curStepNumber} style={{fontWeight: this.state.stepNumber === step.curStepNumber ? 'bold' : 'normal', marginBottom: '5px'}}>
-          <button style={{fontWeight: this.state.stepNumber === step.curStepNumber ? 'bold' : 'normal'}} onClick={() => this.jumpTo(step.curStepNumber?step.curStepNumber:0)}>{desc}</button>
+          <button className={this.state.stepNumber === step.curStepNumber ? 'fontSunflowerBold' : 'fontSunflower'} onClick={() => this.jumpTo(step.curStepNumber?step.curStepNumber:0)}>{desc}</button>
         </li>
       )
     })
@@ -126,7 +127,8 @@ class Game extends React.Component {
     }
 
     return (
-      <div className="game">
+      <div className="game tc">
+        <h1 className="fontOswaldRegular">Tic Tac Toe</h1>
         <div className="game-board">
           <Board 
           squares={current.squares}
@@ -135,7 +137,7 @@ class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          <div className="fontMedievalSharp">{status}</div>
           <button style={{margin: '20px 0 0 '}} onClick={() => this.sortHistory()}>{this.state.isSortAsend ? 'Sort Desend' : 'Sort Asend'}</button>
           <ol>{moves}</ol>
         </div>

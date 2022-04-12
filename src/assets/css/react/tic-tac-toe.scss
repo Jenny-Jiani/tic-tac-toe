@@ -1,0 +1,45 @@
+$bgColor1: #778668;
+$bgColor2: #fbf4ed;
+
+.game {
+  .game-board {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    background: $bgColor1;
+
+    .board-row {
+      .square {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+        border-radius: 0;
+        outline: none;
+        border: 0;
+        background: $bgColor2;
+        cursor: pointer;
+        vertical-align: top;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .game-info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+
+    >div {
+      font-size: 20px;
+    }
+
+    button {
+      border-radius: 0;
+      border: 0;
+      height: 35px;
+      line-height: 35px;
+      padding: 0 10px;
+      font-size: 16px;
+    }
+  }
+}
