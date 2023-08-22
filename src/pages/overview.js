@@ -21,6 +21,10 @@ class Overview extends React.Component {
           key: 'clock',
           link: '/react/clock',
           name: 'Clock'
+        }, {
+          key: 'count',
+          link: '/react/count-1',
+          name: 'Count'
         }],
         showLatest: false
       }]
